@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIMI esimerkki | Kampaamo Helsinki</title>
+    <meta name="description" content="KIMI esimerkki - Ammattitaitoinen kampaamo Helsingissä. Hiustenleikkaukset, värjäykset ja kampaukset. Varaa aika helposti verkossa!">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="KIMI esimerkki | Kampaamo Helsinki">
+    <meta property="og:description" content="Ammattitaitoinen kampaamo Helsingissä. Laadukkaat hiustenleikkaukset ja värjäykset.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="kuvat/logo.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HairSalon",
+        "name": "KIMI esimerkki",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Aleksanterinkatu 20",
+            "addressLocality": "Helsinki",
+            "addressCountry": "FI"
+        },
+        "telephone": "+3584578736248",
+        "email": "gabriel.mansnerus@gmail.com",
+        "openingHours": "Ma-Pe 09:00-18:00, La 10:00-16:00",
+        "priceRange": "€€",
+        "image": "kuvat/logo.png"
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Päänavigaatio">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="KIMI esimerkki - Etusivu">
+                <img src="kuvat/logo.png" alt="KIMI esimerkki logo" class="logo-img">
+                <span class="logo-text">KIMI esimerkki</span>
+            </a>
+            
+            <button class="nav-toggle" aria-label="Avaa valikko" aria-expanded="false" aria-controls="nav-menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu" id="nav-menu" role="menubar">
+                <li role="none"><a href="#palvelut" class="nav-link" role="menuitem">Palvelut</a></li>
+                <li role="none"><a href="#hinnasto" class="nav-link" role="menuitem">Hinnasto</a></li>
+                <li role="none"><a href="#yhteystiedot" class="nav-link" role="menuitem">Yhteystiedot</a></li>
+                <li role="none"><a href="#yhteydenotto" class="nav-link cta-nav" role="menuitem">Varaa aika</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" role="banner">
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-tagline">Tervetuloa</span>
+                <h1 class="hero-title">Kauneus syntyy <span class="accent">yksityiskohdista</span></h1>
+                <p class="hero-subtitle">Ammattitaitoinen kampaamo Helsingin sydämessä. Henkilökohtaista palvelua ja laadukkaita hiustenhoitopalveluja jo vuodesta 2020.</p>
+                <div class="hero-cta">
+                    <a href="#yhteydenotto" class="btn btn-primary">Varaa aika nyt</a>
+                    <a href="#palvelut" class="btn btn-secondary">Tutustu palveluihin</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="kuvat/hero-kuva.jpg" alt="Kampaaja työssään" loading="lazy">
+                <div class="hero-badge">
+                    <span class="badge-number">5+</span>
+                    <span class="badge-text">Vuoden<br>kokemus</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll" aria-hidden="true">
+            <span class="scroll-indicator"></span>
+        </div>
+    </header>
+
+    <!-- Trust Indicators -->
+    <section class="trust-section" aria-label="Luottamusindikaattorit">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                    <span class="trust-text">Ammattitaitoiset kampaajat</span>
+                </div>
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                    <span class="trust-text">Laadukkaat tuotteet</span>
+                </div>
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 6v6l4 2"/>
+                    </svg>
+                    <span class="trust-text">Joustava ajanvaraus</span>
+                </div>
+                <div class="trust-item">
+                    <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                    </svg>
+                    <span class="trust-text">100% Tyytyväisyys</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="palvelut" class="services-section" aria-labelledby="palvelut-otsikko">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Palvelumme</span>
+                <h2 id="palvelut-otsikko" class="section-title">Hiustenhoitoa <span class="accent">rakkaudella</span></h2>
+                <p class="section-subtitle">Tarjoamme kattavan valikoiman hiustenhoitopalveluja kaikille hiustyypeille. Jokainen asiakas saa yksilöllisen konsultaation ennen hoitoa.</p>
+            </div>
+            
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M6 9l6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Hiustenleikkaukset</h3>
+                    <p class="service-desc">Klassiset ja trendikkäät leikkaukset, otsatukat sekä parturipalvelut. Sisältää pesun ja muotoilun.</p>
+                    <span class="service-time">45-60 min</span>
+                </article>
+                
+                <article class="service-card featured">
+                    <div class="service-badge">Suosituin</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Värjäykset</h3>
+                    <p class="service-desc">Balayage, raidat, juurivärjäys ja kokovärjäykset laadukkailla väreillä. Konsultaatio sisältyy hintaan.</p>
+                    <span class="service-time">90-180 min</span>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M12 3v18m-6-6l6 6 6-6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Hoidot</h3>
+                    <p class="service-desc">Kosteuttavat, vahvistavat ja korjaavat hoidot vaurioituneille hiuksille. Olaplex-hoidot saatavilla.</p>
+                    <span class="service-time">30-60 min</span>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Kampaukset</h3>
+                    <p class="service-desc">Juhlakampaukset, juhlakampaukset ja arki-illan lookit. Myös meikki yhteistyökumppaneilta.</p>
+                    <span class="service-time">45-90 min</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="hinnasto" class="pricing-section" aria-labelledby="hinnasto-otsikko">
+        <div class="container">
+            <div class="section-header light">
+                <span class="section-tag">Hinnasto</span>
+                <h2 id="hinnasto-otsikko" class="section-title">Selkeät <span class="accent">hinnat</span></h2>
+                <p class="section-subtitle">Kaikki hinnat sisältävät pesun ja kevyen muotoilun. Tarkka hinta määräytyy hiusten pituuden ja työn vaativuuden mukaan.</p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3 class="pricing-category">Leikkaukset</h3>
+                    <ul class="pricing-list">
+                        <li class="pricing-item">
+                            <span class="pricing-service">Naisten hiustenleikkaus</span>
+                            <span class="pricing-price">65€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Miesten hiustenleikkaus</span>
+                            <span class="pricing-price">35€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Otsatukan leikkaus</span>
+                            <span class="pricing-price">15€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Lasten leikkaus (alle 12v)</span>
+                            <span class="pricing-price">30€</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <h3 class="pricing-category">Värjäykset</h3>
+                    <ul class="pricing-list">
+                        <li class="pricing-item">
+                            <span class="pricing-service">Juurivärjäys</span>
+                            <span class="pricing-price">75€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Kokovärjäys</span>
+                            <span class="pricing-price">95€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Raidat (lyhyt)</span>
+                            <span class="pricing-price">85€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Raidat (pitkä)</span>
+                            <span class="pricing-price">115€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Balayage</span>
+                            <span class="pricing-price">150€</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3 class="pricing-category">Hoidot & Muut</h3>
+                    <ul class="pricing-list">
+                        <li class="pricing-item">
+                            <span class="pricing-service">Tehohoito</span>
+                            <span class="pricing-price">35€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Olaplex-hoito</span>
+                            <span class="pricing-price">55€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Kampaus</span>
+                            <span class="pricing-price">65€</span>
+                        </li>
+                        <li class="pricing-item">
+                            <span class="pricing-service">Juhlakampaus</span>
+                            <span class="pricing-price">95€</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p>* Opiskelijat ja eläkeläiset -10% arkisin klo 9-14. Lahjakortit saatavilla.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" aria-label="Kuvagalleria">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Töitämme <span class="accent">kuvina</span></h2>
+            </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item large">
+                    <img src="kuvat/gallery-1.jpg" alt="Hiustenvärjäystulos" loading="lazy">
+                    <figcaption>Balayage-tekniikka</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="kuvat/gallery-2.jpg" alt="Hiustenleikkaus" loading="lazy">
+                    <figcaption>Moderni leikkaus</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="kuvat/gallery-3.jpg" alt="Kampaus" loading="lazy">
+                    <figcaption>Juhlakampaus</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours & Contact -->
+    <section id="yhteystiedot" class="contact-section" aria-labelledby="yhteystiedot-otsikko">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <span class="section-tag">Yhteystiedot</span>
+                    <h2 id="yhteystiedot-otsikko" class="section-title">Tule käymään <span class="accent">tai soita</span></h2>
+                    
+                    <div class="info-block">
+                        <h3 class="info-title">Osoite</h3>
+                        <address class="info-content">
+                            Aleksanterinkatu 20<br>
+                            00100 Helsinki
+                        </address>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3 class="info-title">Yhteystiedot</h3>
+                        <p class="info-content">
+                            <a href="tel:+3584578736248" class="contact-link">045 7873 6248</a><br>
+                            <a href="mailto:gabriel.mansnerus@gmail.com" class="contact-link">gabriel.mansnerus@gmail.com</a>
+                        </p>
+                    </div>
+                    
+                    <div class="info-block">
+                        <h3 class="info-title">Aukioloajat</h3>
+                        <ul class="hours-list">
+                            <li><span>Maanantai - Perjantai</span> <span>9:00 - 18:00</span></li>
+                            <li><span>Lauantai</span> <span>10:00 - 16:00</span></li>
+                            <li><span>Sunnuntai</span> <span>Suljettu</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.7723!2d24.948!3d60.1699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDEwJzExLjYiTiAyNMKwNTYnNTIuOCJF!5e0!3m2!1sfi!2sfi!4v1234567890" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Kartta sijainnista Aleksanterinkatu 20, Helsinki">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="yhteydenotto" class="form-section" aria-labelledby="yhteydenotto-otsikko">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <span class="section-tag">Varaa aika</span>
+                    <h2 id="yhteydenotto-otsikko" class="section-title">Varaa aikasi <span class="accent">nyt</span></h2>
+                    <p class="section-subtitle">Täytä lomake alla, niin otamme sinuun yhteyttä mahdollisimman pian. Voit myös soittaa suoraan numeroon <a href="tel:+3584578736248">045 7873 6248</a>.</p>
+                </div>
+                
+                <form class="contact-form" action="https://formspree.io/f/xvzbgpoz" method="POST" aria-label="Yhteydenottolomake">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nimi *</label>
+                            <input type="text" id="name" name="name" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Puhelin *</label>
+                            <input type="tel" id="phone" name="phone" required aria-required="true">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Sähköposti</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Haluttu palvelu</label>
+                            <select id="service" name="service">
+                                <option value="">Valitse palvelu...</option>
+                                <option value="leikkaus">Hiustenleikkaus</option>
+                                <option value="varitys">Värjäys</option>
+                                <option value="hoito">Hoito</option>
+                                <option value="kampaus">Kampaus</option>
+                                <option value="muu">Muu / En tiedä</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Toivottu ajankohta</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Viesti / Lisätiedot</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Kerro toiveistasi, hiustesi nykytilanteesta tai kysy lisää..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Lähetä varauspyyntö</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    
+                    <p class="form-note">* Pakolliset kentät. Vastaamme yleensä saman arkipäivän aikana.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">KIMI esimerkki</span>
+                    <p class="footer-tagline">Kauneus syntyy yksityiskohdista</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#palvelut">Palvelut</a>
+                    <a href="#hinnasto">Hinnasto</a>
+                    <a href="#yhteystiedot">Yhteystiedot</a>
+                    <a href="#yhteydenotto">Varaa aika</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KIMI esimerkki. Kaikki oikeudet pidätetään.</p>
+                <p class="footer-credit">Verkkosivut: <a href="https://nopeatsivut.fi" target="_blank" rel="noopener">Nopeat Sivut</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
